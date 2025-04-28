@@ -70,7 +70,7 @@ function Signin() {
       
               <div className="absolute z-40 inset-0 flex min-h-screen items-center justify-center">
                 <div className="mx-auto w-5/6 sm:w-full max-w-md bg-transparant backdrop-opacity-50 p-8 rounded-lg shadow-2xl">
-                  <h1 className="text-3xl font-medium text-white text-center ">Sign-up</h1>
+                  <h1 className="text-3xl font-medium text-white text-center ">Sign-in</h1>
                   <form className="mt-6" onSubmit={handleSubmit}>
                     
                     <div className="relative z-0 mt-6">
@@ -109,7 +109,7 @@ function Signin() {
                       className={`mt-6 w-full rounded-md bg-blue-600 px-6 py-2 text-white font-medium transition hover:bg-blue-700 ${isSubmitting && "opacity-50 cursor-not-allowed"}`}
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Signning up..." : "Sign-up"}
+                      {isSubmitting ? "Signning up..." : "Sign-in"}
                     </button>
                   </form>
                 </div>
