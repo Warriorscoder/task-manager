@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 import { useState } from 'react';
@@ -10,6 +9,7 @@ export default function TaskForm() {
   const [priority, setPriority] = useState<'Low' | 'Medium' | 'High'>('Low');
 
   const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
     const token = localStorage.getItem('token');
 
     if (!token) {
